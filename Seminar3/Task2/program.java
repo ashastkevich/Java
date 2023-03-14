@@ -1,5 +1,7 @@
 package Seminar3.Task2;
-
+/*
+ * Пусть дан произвольный список целых чисел, удалить из него чётные числа
+ */
 import java.util.ArrayList;
 
 public class program {

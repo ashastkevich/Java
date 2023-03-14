@@ -1,5 +1,7 @@
 package Seminar3.Task1;
-
+/*
+ * Реализовать алгоритм сортировки слиянием
+ */
 import java.util.Arrays;
 
 public class program {

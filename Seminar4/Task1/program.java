@@ -7,11 +7,10 @@ import java.util.LinkedList;
  */
 public class program {
     public static LinkedList<Integer> reverseLinkedList(LinkedList<Integer> list) {
-        LinkedList<Integer> reverseList = new LinkedList<Integer>();
-        while (list.isEmpty() == false) {
-            reverseList.add(list.pollLast());
-        }
-        return reverseList;
+        //LinkedList<Integer> reverseList = new LinkedList<Integer>();
+        for (int i = 0; i < list.size(); i++)
+            list.add(i, list.removeLast());
+        return list;
     }
     public static void main(String[] args) {
         LinkedList<Integer> myList= new LinkedList<Integer> ();

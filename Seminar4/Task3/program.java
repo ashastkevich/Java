@@ -1,0 +1,46 @@
+package Task3;
+import java.util.Deque;
+import java.util.LinkedList;
+/*
+ * Калькулятор
+ * В калькулятор добавьте возможность отменить последнюю операцию
+ */
+import java.util.Scanner;
+
+public class program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Deque<Integer> myList= new LinkedList<Integer> ();
+        boolean exit = false;
+        while (exit != true) {
+            System.out.println("Введите число a: ");
+            int a =scanner.nextInt();
+            System.out.println("Введите число b: ");
+            int b =scanner.nextInt();
+            System.out.println("Введите операцию (+ - * /): ");
+            String opr =scanner.next();
+            switch (opr) {
+                case "+":
+                    int c1 = a + b;
+                    System.out.printf("%d %s %d = %d", a, opr, b, c1);
+                    break;
+                case "-":
+                    int c2 = a - b;
+                    System.out.printf("%d %s %d = %d", a, opr, b, c2);
+                    break;
+                case "*":
+                    int c3 = a * b;
+                    System.out.printf("%d %s %d = %d", a, opr, b, c3);
+                    break;
+                case "/":
+                    int c4 = a / b;
+                    System.out.printf("%d %s %d = %d", a, opr, b, c4);
+                    break;
+                default:
+                    exit = true;
+                    break;
+            }
+        } 
+       scanner.close(); 
+    }
+}

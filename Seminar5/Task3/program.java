@@ -1,7 +1,4 @@
 package Seminar5.Task3;
-
-import java.util.ArrayList;
-
 /*
  * Реализовать алгоритм пирамидальной сортировки (HeapSort)
  */
